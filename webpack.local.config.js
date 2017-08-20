@@ -2,7 +2,7 @@ var path = require("path")
 var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
 
-var ip = 'localhost'
+var ip = 'reactfoto.herokuapp.com'
 var config = require('./webpack.base.config.js')
 
 config.devtool = "#eval-source-map"
