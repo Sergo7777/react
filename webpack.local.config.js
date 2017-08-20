@@ -2,20 +2,20 @@ var path = require("path")
 var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
 
-var ip = 'localhost'
+var ip = 'reactfoto.herokuapp.com'
 var config = require('./webpack.base.config.js')
 
 config.devtool = "#eval-source-map"
 
 config.entry = {
   App1: [
-    'webpack-dev-server/client?http://' + ip + ':3000',
+    'webpack-dev-server/client?https://' + ip + ':3000',
     'webpack/hot/only-dev-server',
     './reactjs/App1',
   ],
 }
 
-config.output.publicPath = 'http://' + ip + ':3000' + '/assets/bundles/'
+config.output.publicPath = 'https://' + ip + ':3000' + '/assets/bundles/'
 
 config.plugins = config.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
