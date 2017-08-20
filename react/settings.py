@@ -25,7 +25,7 @@ SECRET_KEY = '$+z@srcn_i20f9ks%c@l%-^+k2*_t#qm*g(4&d@tk74uh)b=et'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,7 +121,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'react/static'),
 ]
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+import dj_database_url
+db_form_env = dj_database_url.config()
+DATABASES['default'].update(db_form_env)
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/local/',  # end with slash
