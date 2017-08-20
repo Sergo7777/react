@@ -31,3 +31,6 @@
     "redux-thunk": "^1.0.3"
   }
 }
+"scripts": {
+  "start": "node server.js"
+}
