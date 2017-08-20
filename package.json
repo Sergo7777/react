@@ -1,9 +1,7 @@
 {
   "name": "react",
   "version": "0.0.1",
-   "scripts": {
-    "start": "node server.js"
-    },
+
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.6.5",
