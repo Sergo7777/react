@@ -12,5 +12,5 @@ new WebpackDevServer(webpack(config), {
     console.log(err)
   }
 
-  console.log('Listening at ' + config.ip
+  console.log('Listening at ' + config.ip + ':3000')
 })
