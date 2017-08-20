@@ -2,8 +2,7 @@
   "name": "react",
   "version": "0.0.1",  
   "scripts": {
-"build-js": "babel src -d lib --presets=es2015,react",
-"start": "npm run build-js && webpack -p && node server.js",
+"start": " webpack -p && node server.js",
 },
   "devDependencies": {
     "babel": "^6.5.2",
