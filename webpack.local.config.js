@@ -9,13 +9,13 @@ config.devtool = "#eval-source-map"
 
 config.entry = {
   App1: [
-    'webpack-dev-server/client?https://' + ip + ':3000',
+    'webpack-dev-server/client?https://' + ip ,
     'webpack/hot/only-dev-server',
     './reactjs/App1',
   ],
 }
 
-config.output.publicPath = 'https://' + ip + ':3000' + '/assets/bundles/'
+config.output.publicPath = 'https://' + ip  + '/assets/bundles/'
 
 config.plugins = config.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
