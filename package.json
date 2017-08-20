@@ -2,6 +2,7 @@
   "name": "react",
   "version": "0.0.1",  
   "scripts": {
+"heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
 "start": " webpack -p && node server.js",
 },
   "devDependencies": {
